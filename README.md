@@ -7,7 +7,7 @@ Script walks through devices in invevtory, run and collect cdp or lldp data to b
 Then uses `graphviz` module to build .svg file using topology data.  
 By default image file is saved as `img/topology.svg`.  
 
-![map example](img/topology.svg)  
+![map example](doc/topology.svg)
 
 ### Steps to run
 
