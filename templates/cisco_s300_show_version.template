@@ -1,0 +1,14 @@
+Value Required LOCAL_INTERFACE (\d:\d+)
+Value Required NEIGHBOR_INTERFACE (\S+)
+Value Required NEIGHBOR_NAME (\S+)
+
+Start
+  ^Port ID : ${LOCAL_INTERFACE}.+
+  ^Remote Entities Count : 1
+  ^\s+Port ID\s+: ${NEIGHBOR_INTERFACE}
+  ^\s+System Name\s+: ${NEIGHBOR_NAME} -> Record
+serg@tst-time:/srv/devices/topology$ cat templates/cisco_s300_show_version.template
+Value VERSION (\S+)
+
+Start
+  ^SW version\s+${VERSION}.*$$ -> Record

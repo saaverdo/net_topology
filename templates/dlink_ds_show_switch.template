@@ -1,0 +1,14 @@
+Value SWITCH_MODEL (\S+)
+Value IP_ADDRESS (\S+)
+Value VERSION (\S+)
+Value HW_REVISION (\S+)
+Value FW_TYPE (\S+)
+Value SERIAL (\S+)
+
+Start
+  ^Device Type\s+: ${SWITCH_MODEL}
+  ^IP Address\s+: ${IP_ADDRESS}
+  ^Firmware Version\s+: Build ${VERSION}
+  ^Hardware Version\s+: ${HW_REVISION}
+  ^Firmware Type\s+: ${FW_TYPE}
+  ^Serial Number\s+: ${SERIAL}
