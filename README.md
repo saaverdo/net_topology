@@ -9,6 +9,8 @@ By default image file is saved as `img/topology.svg`.
 
 ![map example](doc/topology.svg)
 
+##### script assumes that switch's name starts with `sw-` prefix (`sw-dc-2-asw-1`)
+
 ### Steps to run
 
 Install required packages:  
@@ -41,3 +43,5 @@ Run script:
 ```
 python main.py -i inventory.yml -p 15 -proto lldp
 ```
+
+
