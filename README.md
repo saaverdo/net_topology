@@ -1,6 +1,14 @@
 # net_topology
 ---
 
+Script to build network map from cdp/lldp data.  
+
+Script walks through devices in invevtory, run and collect cdp or lldp data to build network topology.  
+Then uses `graphviz` module to build .svg file using topology data.  
+By default image file is saved as `img/topology.svg`.  
+
+![map example](img/topology.svg)  
+
 ### Steps to run
 
 Install required packages:  
