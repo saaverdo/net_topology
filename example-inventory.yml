@@ -1,0 +1,11 @@
+- device_type: cisco_ios
+  hostname: sw-dc-2-asw-1
+  ip: 192.168.128.8
+  username: cisco
+  password: cisco
+  secret: cisco
+  skip: false
+- device_type: cisco_s300
+  hostname: sw-dc-2-asw-3
+  ip: 192.168.128.10
+  skip: false
